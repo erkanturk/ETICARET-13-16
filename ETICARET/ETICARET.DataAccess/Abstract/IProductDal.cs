@@ -7,7 +7,7 @@ namespace ETICARET.DataAccess.Abstract
 {
     public interface IProductDal:IRepository<Product>
     {
-        List<Product> GetProductsByCategory(string category, int page, int pageSiz);//Pagination
+        List<Product> GetProductsByCategory(string category, int page, int pageSize);//Pagination
         Product? GetProductDetails(int id);
         int GetCountByCategory(string category);
         void Update(Product entity, int[] categoryIds);
