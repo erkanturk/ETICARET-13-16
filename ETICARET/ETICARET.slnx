@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="ETICARET.Business/ETICARET.Business.csproj" Id="a06dd9e1-beab-4f85-bd17-2ea6ef53f72a" />
   <Project Path="ETICARET.DataAccess/ETICARET.DataAccess.csproj" />
   <Project Path="ETICARET.Entities/ETICARET.Entities.csproj" />
 </Solution>
