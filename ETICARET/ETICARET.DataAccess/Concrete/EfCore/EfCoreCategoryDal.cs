@@ -21,7 +21,7 @@ namespace ETICARET.DataAccess.Concrete.EfCore
             return await context.Categories.Include(c => c.ProductCategories).ToListAsync(ct);
         }
 
-        public Category? GetCategoryWithProduct(int categoryId)
+        public Category? GetCategoryWithProducts(int categoryId)
         {
             using var context = new DataContext();
             return context.Categories

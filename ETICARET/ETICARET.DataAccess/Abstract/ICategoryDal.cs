@@ -8,7 +8,7 @@ namespace ETICARET.DataAccess.Abstract
     public interface ICategoryDal:IRepository<Category>
     {
 
-        Category? GetCategoryWithProduct(int categoryId);
+        Category? GetCategoryWithProducts(int categoryId);
         List<Category> GetAllWithProductCount();
         Task<Category?> GetCategoryWithProductAsync(int categoryId, CancellationToken ct = default);
         Task<List<Category>> GetAllWithProductCountAsync(CancellationToken ct = default);

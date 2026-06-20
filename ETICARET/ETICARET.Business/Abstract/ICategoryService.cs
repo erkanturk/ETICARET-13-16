@@ -13,7 +13,7 @@ namespace ETICARET.Business.Abstract
         void Update(Category entity);
         void Delete(Category entity);
         Category? GetCategoryWithProducts(int categoryId);
-        Category? GetByWithProducts(int CategoryId);
+        Category? GetByWithProducts(int categoryId);
 
 
         Task<Category?> GetByIdAsync(int categoryId,CancellationToken ct=default);
