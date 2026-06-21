@@ -12,7 +12,7 @@ namespace ETICARET.WebUI.Controllers
         }
 
 
-        public IActionResult Privacy([Fr])
+        public IActionResult Privacy()
         {
             return View();
         }
