@@ -1,4 +1,5 @@
 ﻿using ETICARET.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,6 +11,19 @@ namespace ETICARET.DataAccess.Concrete.EfCore
         public static void Seed()
         {
             var context = new DataContext();
+            if (context.Database.GetPendingMigrations().Count() == 0)
+            {
+                if (context.Categories.Count() == 0)
+                {
+                    context.AddRange(Categories);
+                }
+                if (context.Products.Count() == 0)
+                {
+                    context.AddRange(Products);
+                    context.AddRange(ProductCategories);
+                }
+                context.SaveChanges();
+            }
 
         }
         private static Category[] Categories =
