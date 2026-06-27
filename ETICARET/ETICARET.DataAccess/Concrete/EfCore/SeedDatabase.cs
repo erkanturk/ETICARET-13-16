@@ -118,11 +118,62 @@ namespace ETICARET.DataAccess.Concrete.EfCore
                     new Image(){ImageUrl="televizyon-2.jpg"},
                     new Image(){ImageUrl="televizyon-3.jpg"} },
                 Description="<p>Cok iyi televizyon"
-            }
+          },
+              new Product(){Name="IPhone 17 256",Price=80000,Images={
+                    new Image(){ImageUrl="iphone17.jpg"},
+                    new Image(){ImageUrl="iphone17-1.jpg"},
+                    new Image(){ImageUrl="iphone17-2.jpg"},
+                    new Image(){ImageUrl="iphone17-3.jpg"}},
+                Description="<p>IPhone 17 256 gb Beyaz Telefon"
+                },
+            new Product(){Name="IPhone 14 128",Price=40000,Images={
+                    new Image(){ImageUrl="iphone14.jpg"},
+                    new Image(){ImageUrl="iphone14-1.jpg"},
+                    new Image(){ImageUrl="iphone14-2.jpg"},
+                    new Image(){ImageUrl="iphone14-3.jpg"}},
+                Description="<p>IPhone 14 128 gb Blue Telefon"
+                },
+            new Product(){Name="PHILIPS EP5547/90 Tam Otomatik Espresso Makinesi Krom Siyah",Price=30000,Images={
+                    new Image(){ImageUrl="PHILIPS.jpg"},
+                    new Image(){ImageUrl="PHILIPS-1.jpg"},
+                    new Image(){ImageUrl="PHILIPS-2.jpg"},
+                    new Image(){ImageUrl="PHILIPS-3.jpg"}},
+                Description="Tam Otomatik Espresso Makinesi"
+                },
+            new Product(){Name="DYSON V12 Detect Slim Absolute Kablosuz Şarjlı Dikey Süpürge Sarı Nikel",Price=40000,Images={
+                    new Image(){ImageUrl="DYSON.jpg"},
+                    new Image(){ImageUrl="DYSON-1.jpg"},
+                    new Image(){ImageUrl="DYSON-2.jpg"},
+                    new Image(){ImageUrl="DYSON-3.jpg"}},
+                Description="Kablosuz Şarjlı Dikey Süpürge"
+                },
+            new Product(){Name="TEFAL SuperGrill 3in1 Tost Makinesi Inox",Price=6000,Images={
+                    new Image(){ImageUrl="TEFAL.jpg"},
+                    new Image(){ImageUrl="TEFAL-1.jpg"},
+                    new Image(){ImageUrl="TEFAL-2.jpg"},
+                    new Image(){ImageUrl="TEFAL-3.jpg"}},
+                Description="Ekstra ızgara seçeneği"
+                },
+            new Product(){Name="ARZUM AR6000 Steampro Plus Buharlı Ütü Siyah",Price=3000,Images={
+                    new Image(){ImageUrl="ARZUM.jpg"},
+                    new Image(){ImageUrl="ARZUM-1.jpg"},
+                    new Image(){ImageUrl="ARZUM-2.jpg"},
+                    new Image(){ImageUrl="ARZUM-3.jpg"}},
+                Description="Buharlı Ütü Siyah"
+                },
+            new Product(){Name="GRUNDIG KMP 4470 G Mutfak Şefi",Price=10000,Images={
+                    new Image(){ImageUrl="GRUNDIG.jpg"},
+                    new Image(){ImageUrl="GRUNDIG-1.jpg"},
+                    new Image(){ImageUrl="GRUNDIG-2.jpg"},
+                    new Image(){ImageUrl="GRUNDIG-3.jpg"}},
+                Description="Hamur Yoğurma Aparatı, Balon Çırpıcı Aparat"
+                },
+
         };
         private static ProductCategory[] ProductCategories =
         {
             new ProductCategory(){Product=Products[0],Category=Categories[0]},
+            new ProductCategory(){Product=Products[1],Category=Categories[0]},
             new ProductCategory(){Product=Products[2],Category=Categories[1]},
             new ProductCategory(){Product=Products[3],Category=Categories[1]},
             new ProductCategory(){Product=Products[4],Category=Categories[1]},
@@ -132,7 +183,14 @@ namespace ETICARET.DataAccess.Concrete.EfCore
             new ProductCategory(){Product=Products[8],Category=Categories[3]},
             new ProductCategory(){Product=Products[9],Category=Categories[3]},
             new ProductCategory(){Product=Products[10],Category=Categories[3]},
-            new ProductCategory(){Product=Products[11],Category=Categories[3]}
+            new ProductCategory(){Product=Products[11],Category=Categories[3]},
+            new ProductCategory(){Product=Products[12],Category=Categories[0]},
+            new ProductCategory(){Product=Products[13],Category=Categories[0]},
+            new ProductCategory(){Product=Products[14],Category=Categories[2]},
+            new ProductCategory(){Product=Products[15],Category=Categories[2]},
+            new ProductCategory(){Product=Products[16],Category=Categories[2]},
+            new ProductCategory(){Product=Products[17],Category=Categories[2]},
+            new ProductCategory(){Product=Products[18],Category=Categories[2]},
         };
 
 
