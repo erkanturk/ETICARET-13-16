@@ -14,10 +14,10 @@ namespace ETICARET.DataAccess.Concrete.EfCore
         }
         private static Category[] Categories =
         {
-            new Category(){Name="Telefon"},
-            new Category(){Name="Bilgisayar"},
-            new Category(){Name="Elektronik"},
-            new Category(){Name="Ev Gereçleri"}
+            new Category(){Name="Telefon"},//0
+            new Category(){Name="Bilgisayar"},//1
+            new Category(){Name="Elektronik"},//2
+            new Category(){Name="Ev Gereçleri"}//3
         };
         private static Product[] Products =
         {
@@ -36,6 +36,10 @@ namespace ETICARET.DataAccess.Concrete.EfCore
                 Description="<p>IPhone 16 256 gb Lacivertaş Telefon"
                 },
 
+        };
+        private static ProductCategory[] ProductCategories =
+        {
+            new ProductCategory(){Product=Products[0],Category=Categories[0]},
         };
 
 
