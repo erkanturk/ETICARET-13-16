@@ -19,5 +19,25 @@ namespace ETICARET.DataAccess.Concrete.EfCore
             new Category(){Name="Elektronik"},
             new Category(){Name="Ev Gereçleri"}
         };
+        private static Product[] Products =
+        {
+            new Product(){Name="IPhone 15 128",Price=50000,Images={
+                    new Image(){ImageUrl="iphone 15.jpg"},
+                    new Image(){ImageUrl="iphone 15-1.jpg"},
+                    new Image(){ImageUrl="iphone 15-2.jpg"},
+                    new Image(){ImageUrl="iphone 15-3.jpg"}},
+                Description="<p>IPhone 15 128 gb Telefon"
+                },
+            new Product(){Name="IPhone 16 256",Price=60000,Images={
+                    new Image(){ImageUrl="iphone16.jpg"},
+                    new Image(){ImageUrl="iphone16-1.jpg"},
+                    new Image(){ImageUrl="iphone16-2.jpg"},
+                    new Image(){ImageUrl="iphone16-3.jpg"}},
+                Description="<p>IPhone 16 256 gb Lacivertaş Telefon"
+                },
+
+        };
+
+
     }
 }
