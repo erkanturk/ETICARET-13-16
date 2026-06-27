@@ -83,6 +83,41 @@ namespace ETICARET.DataAccess.Concrete.EfCore
                     new Image(){ImageUrl="msi-mpg-trident-2.jpg"},
                     new Image(){ImageUrl="msi-mpg-trident-3.jpg"} },
                 Description="<p>İşletim Sistemi: Windows 11 Home\r\nİşlemci: Intel Core Ultra 7 processor 265F\r\nDepolama Alanı: 1TB*1 SSD\r\nSistem Belleği: 32GB DDR5\r\nEkran Kartı: GeForce RTX 5060 Ti 8G SHADOW 2X PLUS\r\nRenk: Siyah"
+            },
+            new Product(){Name="Ütü Masası",Price=500,Images={
+                    new Image(){ImageUrl="utu-masasi.jpg"},
+                    new Image(){ImageUrl="utu-masasi-1.jpg"},
+                    new Image(){ImageUrl="utu-masasi-2.jpg"},
+                    new Image(){ImageUrl="utu-masasi-3.jpg"} },
+                Description="<p>Cok iyi ütü masası"
+            },
+            new Product(){Name="Buzdolabı",Price=15000,Images={
+                    new Image(){ImageUrl="buzdolabi.jpg"},
+                    new Image(){ImageUrl="buzdolabi-1.jpg"},
+                    new Image(){ImageUrl="buzdolabi-2.jpg"},
+                    new Image(){ImageUrl="buzdolabi-3.jpg"} },
+                Description="<p>Cok iyi buzdolabı"
+            },
+            new Product(){Name="Çamaşır Makinesi",Price=10000,Images={
+                    new Image(){ImageUrl="camasir-makinesi.jpg"},
+                    new Image(){ImageUrl="camasir-makinesi-1.jpg"},
+                    new Image(){ImageUrl="camasir-makinesi-2.jpg"},
+                    new Image(){ImageUrl="camasir-makinesi-3.jpg"} },
+                Description="<p>Cok iyi çamaşır makinesi"
+            },
+            new Product(){Name="Bulaşık Makinesi",Price=8000,Images={
+                    new Image(){ImageUrl="bulasik-makinesi.jpg"},
+                    new Image(){ImageUrl="bulasik-makinesi-1.jpg"},
+                    new Image(){ImageUrl="bulasik-makinesi-2.jpg"},
+                    new Image(){ImageUrl="bulasik-makinesi-3.jpg"} },
+                Description="<p>Cok iyi bulaşık makinesi"
+            },
+            new Product(){Name="Televizyon",Price=20000,Images={
+                    new Image(){ImageUrl="televizyon.jpg"},
+                    new Image(){ImageUrl="televizyon-1.jpg"},
+                    new Image(){ImageUrl="televizyon-2.jpg"},
+                    new Image(){ImageUrl="televizyon-3.jpg"} },
+                Description="<p>Cok iyi televizyon"
             }
         };
         private static ProductCategory[] ProductCategories =
@@ -92,7 +127,12 @@ namespace ETICARET.DataAccess.Concrete.EfCore
             new ProductCategory(){Product=Products[3],Category=Categories[1]},
             new ProductCategory(){Product=Products[4],Category=Categories[1]},
             new ProductCategory(){Product=Products[5],Category=Categories[1]},
-            new ProductCategory(){Product=Products[6],Category=Categories[1]}
+            new ProductCategory(){Product=Products[6],Category=Categories[1]},
+            new ProductCategory(){Product=Products[7],Category=Categories[3]},
+            new ProductCategory(){Product=Products[8],Category=Categories[3]},
+            new ProductCategory(){Product=Products[9],Category=Categories[3]},
+            new ProductCategory(){Product=Products[10],Category=Categories[3]},
+            new ProductCategory(){Product=Products[11],Category=Categories[3]}
         };
 
 
